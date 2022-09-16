@@ -82,6 +82,10 @@
     font-weight: 400;
 }
 
+.main{
+    background: linear-gradient(180deg, rgba(245, 245, 245, 0) 1.04%, #F5F5F5 100%);
+}
+
 .banner{
     filter: drop-shadow(0px 7px 12px rgba(158, 158, 163, 0.1));
     background: #FFF1B8 url(../images/banner-img.png) no-repeat top right -200px;
