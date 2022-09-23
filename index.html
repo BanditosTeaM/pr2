@@ -6,25 +6,24 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./css/normalize.css">
     <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/animate.css">
+    <link rel="stylesheet" href="./css/modal.css">
     <title>Delivery food</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
 </head>
 <body>
-    <div class="wraper">
-    <header class="header">
-                <a href="index.html"><img src="../images/logo/logo.svg" alt="logo" class="logo"></a>       
-                <input type="text" class="input search-input" placeholder="Адрес доставки">
-                <div class="buttons">
-                    <button class="button button-primory"><img src="../images/login.svg" alt="Login" class="icon"><span class="text">Вход</span></button>
-                    <button class="button"><img src="../images/cart.svg" alt="Cart" class="icon"><span class="text">Корзина</span></button>  
-                </div>   
-    </header>
-
- <div class="main">
-    <div class="wraper">
-        <section class="banner">
+    <div class="wrapper">
+        <header class="header">
+            <a href="./index.html"><img src="./images/logo/logo.svg" alt="logo" class="logo"></a>       
+            <input type="text" class="input input-address" placeholder="Адрес доставки">
+            <div class="buttons">
+                <button class="button button-primory"><img src="./images/login.svg" alt="Login" class="icon"><span class="text">Вход</span></button>
+                <button class="button"><img src="./images/cart.svg" alt="Cart" class="icon"><span class="text">Корзина</span></button>  
+            </div>   
+        </header>
+        <section class="banner WOW animate__heartBeat">
             <h1 class="banner-tittle">Онлайн-сервис <br/>доставки еды на дом</h1>
             <p class="banner-text">Блюда из любимого ресторана привезет <br/>курьер в перчатках, маске и с антисептиком</p>
         </section>
@@ -34,7 +33,7 @@
                 <input type="text" class="input input-search" placeholder="Поиск блюд и ресторанов">
             </div>
             <div class="cards">
-                <a href="restaurant.html" class="card">
+                <a href="./restaurant.html" class="card">
                     <img src="./images/cards/1.png" alt="image" class="card-image">
                     <div class="card-text">
                         <div class="card-heading">
@@ -49,7 +48,7 @@
                         </div>
                     </div>
                 </a>
-                <a href="restaurant.html" class="card">
+                <a href="./restaurant.html" class="card">
                     <img src="./images/cards/2.png" alt="image" class="card-image">
                     <div class="card-text">
                         <div class="card-heading">
@@ -64,7 +63,7 @@
                         </div>
                     </div>
                 </a>
-                <a href="restaurant.html" class="card">
+                <a href="./restaurant.html" class="card">
                     <img src="./images/cards/3.png" alt="image" class="card-image">
                     <div class="card-text">
                         <div class="card-heading">
@@ -79,7 +78,7 @@
                         </div>
                     </div>
                 </a>
-                <a href="restaurant.html" class="card">
+                <a href="./restaurant.html" class="card">
                     <img src="./images/cards/4.png" alt="image" class="card-image">
                     <div class="card-text">
                         <div class="card-heading">
@@ -94,7 +93,7 @@
                         </div>
                     </div>
                 </a>
-                <a href="restaurant.html" class="card">
+                <a href="./restaurant.html" class="card">
                     <img src="./images/cards/5.png" alt="image" class="card-image">
                     <div class="card-text">
                         <div class="card-heading">
@@ -109,7 +108,7 @@
                         </div>
                     </div>
                 </a>
-                <a href="restaurant.html" class="card">
+                <a href="./restaurant.html" class="card">
                     <img src="./images/cards/6.png" alt="image" class="card-image">
                     <div class="card-text">
                         <div class="card-heading">
@@ -127,30 +126,26 @@
             </div>
         </section>
     </div>
- </div>
-
-    
-
-</div>
-
     <footer class="footer">
-        <div class="wraper">
-        <div class="footer-block">
-            <img src="./images/logo/logo.svg" alt="logo" class="logo footer-logo">
-            <nav class="footer-nav">
-                <a href="#" class="footer-link">Ресторан</a>
-                <a href="#" class="footer-link">Курьерам</a>
-                <a href="#" class="footer-link">Пресс-центр</a>
-                <a href="#" class="footer-link">Контакты</a>
-            </nav>
-            <div class="social-links">
-                <a href="#" class="social-link"><img src="./images/logo/inst.svg" alt="instagram"></a>
-                <a href="#" class="social-link"><img src="./images/logo/face.svg" alt="facebook"></a>
-                <a href="#" class="social-link"><img src="./images/logo/vk.svg" alt="vk"></a>
+        <div class="wrapper">
+            <div class="footer-block">
+                <img src="./images/logo/logo.svg" alt="logo" class="logo footer-logo">
+                <nav class="footer-nav">
+                    <a href="#" class="footer-link">Ресторан</a>
+                    <a href="#" class="footer-link">Курьерам</a>
+                    <a href="#" class="footer-link">Пресс-центр</a>
+                    <a href="#" class="footer-link">Контакты</a>
+                </nav>
+                <div class="social-links">
+                    <a href="#" class="social-link"><img src="./images/logo/inst.svg" alt="instagram"></a>
+                    <a href="#" class="social-link"><img src="./images/logo/face.svg" alt="facebook"></a>
+                    <a href="#" class="social-link"><img src="./images/logo/vk.svg" alt="vk"></a>
+                </div>
             </div>
         </div>
-    </div>
     </footer>
-
 </body>
+<script src="./js/wow.min.js" defer></script>
+<script src="./js/wow.js" defer></script>
+<script src="./js/index.js" defer></script>
 </html>
