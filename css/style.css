@@ -16,20 +16,7 @@ body{
     font-family: 'Roboto', sans-serif;
     background: linear-gradient(180deg, rgba(245, 245, 245, 0) 1.04%, #F5F5F5 100%);
 }
-.search-input{
-    background: #FFFFFF;
-    border: 1px solid #D9D9D9;
-    border-radius: 2px;
-    height: 40px;
-    width: 690px;
-    font-size: 16px;
-    line-height: 24px;
-    background-image: url(../images/search.svg);
-    background-repeat: no-repeat;
-    background-position: left 11px center;
-    padding-left: 35px;
-    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
-}
+
 .buttons{
     display: flex;
     align-items: center;
@@ -46,7 +33,7 @@ body{
     font-size: 16px;
     line-height: 24px;
 }
-.button-primory{
+.button-prim{
     background: #1890FF;
     border: 1px solid #1890FF;
     color: #FFFFFF;
@@ -61,6 +48,21 @@ body{
 }
 .text{
     vertical-align: middle;
+}
+
+.search-input{
+    background: #FFFFFF;
+    border: 1px solid #D9D9D9;
+    border-radius: 2px;
+    height: 40px;
+    width: 690px;
+    font-size: 16px;
+    line-height: 24px;
+    background-image: url(../images/search.svg);
+    background-repeat: no-repeat;
+    background-position: left 11px center;
+    padding-left: 35px;
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
 }
 
 .input{
@@ -266,6 +268,94 @@ body{
 .social-link:not(:last-child) {
   margin-right: 31px;  
 }
+
+.modal, .modal-auth, .modal-prob {
+    position: fixed;
+    display: flex;
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.4);
+    display: none;
+}
+
+.modal-auth{
+z-index: 1;
+} 
+.modal-prob{
+z-index: 2;
+}
+
+.is-open {
+    display: flex;
+}
+
+.modal-body{
+    margin-bottom: 52px;
+}
+
+.modal-body-auth{
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
+    align-content: flex-start;
+}
+
+.label-auth{
+    margin-top: 10px;
+    margin-bottom: 10px;
+    display: flex;
+    align-items: center;
+    width: 95%;
+    justify-content: space-around;
+}
+
+.input{
+    display: flex;
+    width: 280px;
+    margin-left: auto;
+    margin-right: 50px;
+}
+
+.span{
+    margin-left: 50px;
+}
+
+.user-name{
+    margin-right: 15px;
+    text-decoration: solid;
+    font-family: 'Roboto';
+    font-weight: bold;
+}
+
+.modal-title {
+    margin: 0px;
+    font-weight: bold;
+    font-size: 36px;
+    line-height: 42px;
+}
+.button-out {
+    display: none;
+    margin-left: 10px;
+} 
+.modal-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 45px;
+
+} 
+.modal-dialog {
+    max-width: 780px;
+    width: 950px;
+
+    background: #FFFFFF;
+    border-radius: 5px;
+    margin: auto;
+    padding: 40px 45px;
+}
+
 
 @media (max-width: 1366px){
     .wraper{

@@ -15,14 +15,53 @@
 </head>
 <body>
     <div class="wrapper">
-        <header class="header">
-            <a href="./index.html"><img src="./images/logo/logo.svg" alt="logo" class="logo"></a>       
-            <input type="text" class="input input-address" placeholder="Адрес доставки">
+        <header id="header" class="header">
+            <img src="./images/logo/logo.svg" alt="Agridera" class="logo">
+            <input type="text" class="search-input" placeholder="Адрес доставки" name="address">
             <div class="buttons">
-                <button class="button button-primory"><img src="./images/login.svg" alt="Login" class="icon"><span class="text">Вход</span></button>
-                <button class="button"><img src="./images/cart.svg" alt="Cart" class="icon"><span class="text">Корзина</span></button>  
-            </div>   
+                <span class = "user-name"></span>
+                <button class="button button-prim button-auth">
+                    <img src="./images/login.svg" alt="search" class="button-icon"> 
+                    <span class="button-text"> Войти </span> 
+                </button>
+                <button class="button" id="cart-button">
+                    <img src="./images/cart.svg" alt="search" class="button-icon"> 
+                    <span class="button-text"> Корзина </span> 
+                </button> 
+                <button class="button button-prim button-out ">
+                    <img src="./images/home.svg" alt="search" class="button-icon"> 
+                    <span class="button-text"> Выйти </span>   
+                </button> 
+            </div>      
         </header>
+        
+        <div class="modal-auth">
+            <div class="modal-dialog">
+                <div class="modal-header">
+                    <h3 class="modal-title">Авторизація</h3>
+                    <button class="close-auth">&times;</button>
+                </div>
+                <form id="logInForm">
+                    <fieldset class="modal-body modal-body-auth">
+                        <label class="label-auth">
+                            <span class="span">Логин</span>
+                            <input type="text" class="input" id="login" name="login">
+                        </label>
+                        <label class="label-auth">
+                            <span class="span">Пароль</span>
+                            <input type="password" class="input" id="password" name="password">
+                        </label>
+                    </fieldset>
+                    <div class="modal-footer">
+                        <div class="footer-buttons">
+                            <button class="button button-prim button-login">Авторизоваться</button>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+
+
         <section class="banner WOW animate__heartBeat">
             <h1 class="banner-tittle">Онлайн-сервис <br/>доставки еды на дом</h1>
             <p class="banner-text">Блюда из любимого ресторана привезет <br/>курьер в перчатках, маске и с антисептиком</p>
@@ -144,8 +183,12 @@
             </div>
         </div>
     </footer>
+
+
+
 </body>
+<script src="./js/index.js" defer></script>
 <script src="./js/wow.min.js" defer></script>
 <script src="./js/wow.js" defer></script>
-<script src="./js/index.js" defer></script>
+
 </html>
