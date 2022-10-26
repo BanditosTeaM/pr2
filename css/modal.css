@@ -7,7 +7,7 @@
     height: 100%;
     background: rgba(0,0,0,0.4);
 }
-.modal-window{
+.modal-window, .modal-dialog{
     position: absolute;
     max-width: 780px;
     min-height: 552px;
@@ -110,4 +110,71 @@
 }
 .modal-active{
     display: block;
+}
+
+.modal-auth, .modal-prob {
+    position: fixed;
+    display: flex;
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.4);
+    display: none;
+}
+
+.modal-auth{
+z-index: 1;
+} 
+.modal-prob{
+z-index: 2;
+}
+
+.is-open {
+    display: flex;
+}
+
+.modal-body{
+    margin-bottom: 52px;
+    margin-top: 20px;
+}
+
+.modal-body-auth{
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
+    align-content: flex-start;
+    border: none;
+}
+
+.label-auth{
+    margin-top: 10px;
+    margin-bottom: 10px;
+    display: flex;
+    align-items: center;
+    width: 95%;
+    justify-content: space-around;
+}
+
+.inputLogin, .inputPass{
+    display: flex;
+    width: 280px;
+    margin-left: 10px ;
+    margin-right: 50px;
+}
+
+/* .span{
+    margin-left: 50px;
+} */
+
+.user-name{
+    margin-right: 15px;
+    text-decoration: solid;
+    font-family: 'Roboto';
+    font-weight: bold;
+}
+
+.button-out {
+    display: none;
+    margin-left: 10px;
 }
